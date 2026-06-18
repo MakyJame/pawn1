@@ -37,6 +37,10 @@ class CustomerCreate(BaseModel):
     name: str
     phone: str
 
+@router.get("/")
+def home():
+    return {"msg":"hello from home"}
+
 @router.get("/users")
 def get_all_the_user():
     db = SessionLocal()
