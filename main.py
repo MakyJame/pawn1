@@ -25,5 +25,5 @@ def login():
 @app.get("/profile")
 def profile():
     return {
-        "username":"Mr.Minh test CI/CD"
+        "username":
     }
