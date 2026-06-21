@@ -17,7 +17,7 @@ app.include_router(user_router)
 
 @app.get("/")
 def home():
-    return {"msg":"Test pytest ci/cd"}
+    return {"msg":"hello from home"}
 
 @app.get("/login")
 def login():
