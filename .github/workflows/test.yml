@@ -1,9 +1,9 @@
 name: Test API
 
-on:
+ion:
   push:
     branches:
-      - develop
+      - feature/environment
 
 jobs:
   test:
