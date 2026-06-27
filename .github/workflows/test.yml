@@ -1,6 +1,6 @@
 name: Test API
 
-ion:
+on:
   push:
     branches:
       - feature/environment
