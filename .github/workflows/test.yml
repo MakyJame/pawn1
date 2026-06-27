@@ -24,6 +24,7 @@ jobs:
 
       - name: Run tests
         env:
-          DATABASE_URL: postgresql://minhdv:123456@db:5432/pawn
+          #DATABASE_URL: postgresql://minhdv:123456@db:5432/pawn
+          DATABASE_URL: sqlite:///./test.db
         run: |
           pytest
