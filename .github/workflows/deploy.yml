@@ -66,11 +66,11 @@ jobs:
 
         with:
 
-          host: ${{ secrets.VPS_HOST }}
+          host: ${{ secrets.SERVER_IP }}
 
-          username: ${{ secrets.VPS_USER }}
+          username: ${{ secrets.SERVER_USER }}
 
-          key: ${{ secrets.VPS_SSH_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_PC }}
 
           script: |
 
