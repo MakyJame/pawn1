@@ -74,6 +74,14 @@ jobs:
 
           script: |
 
-            cd ~/app
+            whoami
+            
+            pwd
+
+            ls -la
+
+            cd ~/pawn1
+
+            docker ps
 
             ./deploy.sh
