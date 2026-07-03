@@ -17,11 +17,7 @@ app.include_router(user_router)
 
 @app.get("/")
 def home():
-<<<<<<< HEAD
-    return {"msg":"test deploy 6"}
-=======
     return {"msg":"test docker pull image:v2"}
->>>>>>> a6275d4 (update docker-compose && main.py)
 
 @app.get("/login")
 def login():
