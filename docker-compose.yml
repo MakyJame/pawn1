@@ -1,6 +1,6 @@
 services:
   app:
-    build: .
+    image: caubadev/pawn1:v2
     container_name: pawn-api
     restart: always
     expose:
