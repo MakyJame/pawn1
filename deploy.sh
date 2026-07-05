@@ -1,23 +1,16 @@
 #!/bin/bash
-echo start
+set -e 
 
-echo "Pull latest code"
+echo "Pull latest code..."
+git pull origin nginx/host
 
-git pull origin main
+echo "Pull latest images..."
+docker compose pull
 
-echo "Build new image"
+echo "Start container..."
+docker compose up -d 
 
-docker compose up -d --build
+echo "Done"
 
-echo done
-
-echo "Current container"
 docker ps
 
-if docker compose up -d
-then
- echo "SUCCESS"
-else
- echo "FAILED"
- exit 1
-fi
