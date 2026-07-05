@@ -68,7 +68,7 @@ jobs:
 
           host: ${{ secrets.SERVER_IP }}
 
-          username: ${{ secrets.SERVER_USER }}
+          username: root
 
           key: ${{ secrets.SSH_PRIVATE_KEY_PC }}
 
