@@ -3,8 +3,8 @@ services:
     image: caubadev/pawn1:v2
     container_name: pawn-api
     restart: always
-    expose:
-      - "8000"
+    ports:
+      - "8000:8000"
     environment:
       DATABASE_URL: ${DATABASE_URL}
     depends_on:
