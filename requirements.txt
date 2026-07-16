@@ -5,4 +5,5 @@ psycopg2-binary
 bcrypt
 python-dotenv
 pytest
-httpx2
+httpx2i
+alembic
