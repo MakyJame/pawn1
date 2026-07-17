@@ -12,3 +12,4 @@ class User(Base):
     username = Column(String, unique=True)
     email = Column(String, unique=True)
     age = Column(Integer)
+    name = Column(String)
