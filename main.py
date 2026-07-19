@@ -11,7 +11,7 @@ from routers.user_router import router as user_router
 
 app = FastAPI()
 
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 app.include_router(user_router)
 
