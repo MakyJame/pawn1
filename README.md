@@ -177,7 +177,7 @@ http://127.0.0.1/docs
 Install dependencies
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 
 source venv/bin/activate
 
