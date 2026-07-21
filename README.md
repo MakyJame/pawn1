@@ -254,6 +254,23 @@ Application Running
 - Helm
 - Terraform
 
+## License
+
+This project is developed for educational and portfolio purposes.
+
+## Skills Demonstrated
+
+- RESTful API Design
+- Docker Compose
+- Reverse Proxy
+- HTTPS
+- Linux Administration
+- PostgreSQL
+- SQLAlchemy ORM
+- Alembic Migration
+- GitHub Actions CI/CD
+- VPS Deployment
+
 ---
 
 # Author
