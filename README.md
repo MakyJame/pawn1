@@ -163,23 +163,25 @@ docker compose up -d --build
 Swagger
 
 ```
-http://localhost:8000/docs
-```
+http://localhost/docs
 
----
+OR
 
-# Environment Variables
-
-```env
-DATABASE_URL=
-POSTGRES_USER=
-POSTGRES_PASSWORD=
-POSTGRES_DB=
+http://127.0.0.1/docs
 ```
 
 ---
 
 # Database Migration
+
+Install dependencies
+```bash
+python -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+``
 
 Generate migration
 
