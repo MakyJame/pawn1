@@ -143,7 +143,17 @@ Create environment file
 ```bash
 cp .env.example .env
 ```
+Example:
 
+```env
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=123456
+POSTGRES_DB=pawn
+
+DATABASE_URL=postgresql://postgres:123456@db:5432/pawn
+```
+
+You may choose any username/password you prefer, as long as `DATABASE_URL` matches the values above.
 Run
 
 ```bash
