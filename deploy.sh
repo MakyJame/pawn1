@@ -3,7 +3,7 @@ echo start
 
 echo "Pull latest code"
 
-git pull origin develop
+git pull origin main
 
 echo "Build new image"
 
