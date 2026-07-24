@@ -17,7 +17,7 @@ app.include_router(user_router)
 
 @app.get("/")
 def home():
-    return {"msg":"test docker pull image:v2"}
+    return {"msg":"branch main github actions CI/CD"}
 
 @app.get("/login")
 def login():
