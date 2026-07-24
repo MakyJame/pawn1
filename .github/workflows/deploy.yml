@@ -74,14 +74,16 @@ jobs:
 
           script: |
 
-            whoami
+            #whoami
             
-            pwd
+            #pwd
 
-            ls -la
+            #ls -la
 
             cd ~/pawn1
 
-            docker ps
+            #docker ps
+            git checkout main
+            git pull origin main
 
             ./deploy.sh
