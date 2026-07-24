@@ -7,14 +7,12 @@ from datetime import date
 db = SessionLocal()
 user1 = User(
     username="Minh1",
-    email="minh1@gmail.com",
-    age=30
+    email="minh1@gmail.com"
 )
 
 user2 = User(
     username="Minh2",
-    email="minh2@gmail.com",
-    age=31
+    email="minh2@gmail.com"
 )
 
 item1 = PawnItem(

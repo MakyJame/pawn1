@@ -1,31 +1,27 @@
 from logging.config import fileConfig
+import os
+from dotenv import load_dotenv
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
 
+from database import Base
 from models.user import User
 from models.pawn import PawnItem
 from models.customer import Customer
-from database import Base
-
-import os
-from dotenv import load_dotenv
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
 
-ENV_FILE = os.getenv("ENV_FILE", ".env")
-load_dotenv(ENV_FILE, override=True)
+#2. Force reading environment files from the ENV_FILE variable, default is .env
+#ENV_FILE = os.getenv("ENV_FILE",".env")
+#load_dotenv(ENV_FILE, override=True)
+load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
-
-print("=" * 50)
-print("ENV_FILE=", ENV_FILE)
-print("DATABASE_URL", DATABASE_URL)
-print("=" * 50)
 
 config.set_main_option(
         "sqlalchemy.url",
