@@ -110,20 +110,24 @@ Automatic deployment workflow powered by GitHub Actions.
 
 ---
 
-# Project Structure
+## 📁 Project Structure
 
 ```text
-pawn1
-│
-├── alembic
-├── models
-├── repositories
-├── routers
-├── services
-├── nginx
+pawn1/
+├── alembic/              # Database migrations
+├── docs/                 # Documentation & screenshots
+├── models/               # SQLAlchemy models
+├── repositories/         # Data access layer
+├── routers/              # REST API endpoints
+├── services/             # Business logic
+├── nginx/                # Reverse proxy configuration
+├── scripts/              # Deployment scripts
+├── .github/workflows/    # CI/CD pipeline
 ├── Dockerfile
 ├── docker-compose.yml
-├── deploy.sh
+├── database.py
+├── main.py
+├── requirements.txt
 └── README.md
 ```
 
