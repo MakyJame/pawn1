@@ -17,7 +17,7 @@ app.include_router(user_router)
 
 @app.get("/")
 def home():
-    return {"msg":"branch main github actions CI/CD"}
+    return {"msg":"branch main github actions CI/CD 1"}
 
 @app.get("/login")
 def login():
