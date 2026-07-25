@@ -86,4 +86,4 @@ jobs:
             git checkout main
             git pull origin main
 
-            ./scripts/eploy.sh
+            ./scripts/deploy.sh
